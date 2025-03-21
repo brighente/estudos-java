@@ -1,0 +1,51 @@
+
+public class pet {
+	
+	String nome;
+	String tipo;
+	String sexo;
+	String endereco;
+	Integer idade;
+	Double peso;
+	String raca;
+	
+	
+
+	public pet() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	public void setNome(String resposta) {
+		
+	}
+	
+	public void setTipo(String resposta) {
+		
+	}
+	
+	public void setSexo(String resposta) {
+		
+	}
+	
+	public void setEndereco(String resposta) {
+		
+	}
+	
+	public void setIdade(Integer resposta) {
+		
+	}
+	
+	public void setPeso(Double resposta) {
+		
+	}
+	
+	public void setRaca(String raca) {
+		
+	}
+
+}

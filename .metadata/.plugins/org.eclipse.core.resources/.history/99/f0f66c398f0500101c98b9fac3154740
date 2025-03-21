@@ -1,0 +1,27 @@
+
+public class pet {
+	
+	String nome;
+	String tipo;
+	String sexo;
+	String endereco;
+	Integer idade;
+	Double peso;
+	String raca;
+	
+	public pet(String nome, String tipo, String sexo, String endereco, Integer idade, Double peso, String raca) {
+		this.nome = nome;
+		this.tipo = tipo;
+		this.sexo = sexo;
+		this.endereco = endereco;
+		this.idade = idade;
+		this.peso = peso;
+		this.raca = raca;
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

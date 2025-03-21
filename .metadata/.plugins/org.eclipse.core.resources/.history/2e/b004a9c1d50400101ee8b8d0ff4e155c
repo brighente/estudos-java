@@ -1,0 +1,53 @@
+import javax.swing.JOptionPane;
+
+public class Menu {
+	
+	public static int EscolherOpcao(){
+		
+		int opcao = Integer.parseInt(JOptionPane.showInputDialog
+				("1- Cadastrar PET\n"
+				+ "2- Listar PET\n"
+				+ "3- Deletar PET\n"
+				+ "4- Listar PETS\n"
+				+ "5- Listar PETS por critério\n"
+				+ "6- Sair"));
+		return opcao;
+	}
+	
+	public static void main(String[] args) {
+		
+		int opcaoEscolhida = Integer.parseInt(JOptionPane.showInputDialog
+				("1- Cadastrar PET\n"
+				+ "2- Listar PET\n"
+				+ "3- Deletar PET\n"
+				+ "4- Listar PETS\n"
+				+ "5- Listar PETS por critério\n"
+				+ "6- Sair"));
+			
+			do {
+				
+				
+				try {
+	
+				switch(opcaoEscolhida) {
+				
+				case 1:
+					
+					
+					break;
+					
+				case 2:
+					break;
+					
+					default: System.out.println("Opção Inválida!");
+				}
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(null, "Opção Inválida, digite um número e não uma letra!");
+				EscolherOpcao();
+			}
+		} 
+		while(opcaoEscolhida != 6);
+		
+	}
+}
+	

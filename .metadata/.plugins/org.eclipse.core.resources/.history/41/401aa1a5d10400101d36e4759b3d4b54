@@ -1,0 +1,16 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+public class CadastroPet {
+
+	public static void main(String[] args) {
+		
+		try {
+			InputStream is = new FileInputStream(new File("C:\\Users\\lab003a\\Desktop\\workspace_joaovitor\\DesafioCadastro\\formulario.txt"));
+			InputStreamReader isr = new InputStreamReader(is);
+		}
+		
+	}
+}

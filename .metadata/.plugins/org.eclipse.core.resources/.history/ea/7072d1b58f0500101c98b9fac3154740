@@ -1,0 +1,64 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import javax.swing.JOptionPane;
+
+public class CadastroPet {
+
+	public static void main(String[] args) {
+		
+		try {
+			InputStream is = new FileInputStream(new File("C:\\Users\\jvbri\\OneDrive\\Área de Trabalho\\Dev\\workspace_joaovitor\\DesafioCadastro\\formulario.txt"));
+			InputStreamReader isr = new InputStreamReader(is);
+			BufferedReader leitor = new BufferedReader(isr);
+			
+			pet pet = new pet();
+			
+			
+			String linha = null;
+			while((linha = leitor.readLine()) != null) {
+				String resposta = JOptionPane.showInputDialog(linha);
+				
+				if(linha.startsWith("1 -")) {
+					pet.setNome(resposta);
+			}
+				if(linha.startsWith("2 -")) {
+					pet.setTipo(resposta);
+				}
+				if(linha.startsWith("3 -")) {
+					pet.setSexo(resposta);
+				}
+				if(linha.startsWith("4 -")) {
+					pet.setEndereco(resposta);
+				}
+				if(linha.startsWith("5 -")) {
+					if(Integer.parseInt(resposta) < 0) {
+						resposta = JOptionPane.showInputDialog(linha);
+					} else {
+						pet.setIdade(Integer.parseInt(resposta));
+					}
+				}
+				if(linha.startsWith("6 -")) {
+					if(Double.parseDouble(resposta) > 60 || Double.parseDouble(resposta) < 0.5) {
+						JOptionPane.showMessageDialog(null, "Peso inválido, informe novamente!");
+						resposta = JOptionPane.showInputDialog(linha);
+					}
+					pet.setPeso(Double.parseDouble(resposta));
+				}
+				if(linha.startsWith("7 -")) {
+					pet.setRaca(resposta);
+				}
+			
+		} leitor.close();
+		}catch (Exception e) {
+			e.printStackTrace();
+
+			
+		
+		}
+	}
+}
+

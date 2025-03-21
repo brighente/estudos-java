@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+public class Menu {
+	
+	public static void main(String[] args) {
+		
+		int opcaoEscolhida = Integer.parseInt(JOptionPane.showInputDialog("1-Cadastrar PET\n2-Listar PET"));
+		
+		switch(opcaoEscolhida) {
+		
+		case 1:
+			break;
+			
+		case 2:
+			break;
+			
+			default: System.out.println("Opção Inválida!");
+		}
+	}
+}
+	

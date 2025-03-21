@@ -1,0 +1,24 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+public class CadastroPet {
+
+	public static void main(String[] args) {
+		
+		try {
+			InputStream is = new FileInputStream(new File("C:\\Users\\jvbri\\OneDrive\\Área de Trabalho\\Dev\\workspace_joaovitor\\DesafioCadastro\\formulario.txt"));
+			InputStreamReader isr = new InputStreamReader(is);
+			BufferedReader leitor = new BufferedReader(isr);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+
+			
+		
+	}
+}
+}
