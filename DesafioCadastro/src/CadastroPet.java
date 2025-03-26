@@ -16,11 +16,11 @@ public class CadastroPet {
 		
 		try {
 
-			InputStream is = new FileInputStream(new File("C:\\Users\\jvbri\\OneDrive\\Área de Trabalho\\Dev\\workspace_joaovitor\\DesafioCadastro\\formulario.txt"));
+			InputStream is = new FileInputStream(new File("C:\\Users\\jvbri\\OneDrive\\Área de Trabalho\\Dev\\estudos-java\\DesafioCadastro\\formulario.txt"));
 			InputStreamReader isr = new InputStreamReader(is);
 			BufferedReader leitor = new BufferedReader(isr);
 			
-			String caminhoArquivoRespostas = "C:\\Users\\jvbri\\OneDrive\\Área de Trabalho\\Dev\\workspace_joaovitor\\DesafioCadastro\\respostas.txt";
+			String caminhoArquivoRespostas = "C:\\Users\\jvbri\\OneDrive\\Área de Trabalho\\Dev\\estudos-java\\DesafioCadastro\\respostas.txt";
 			BufferedWriter escritor = new BufferedWriter(new FileWriter(caminhoArquivoRespostas));
 			
 			pet pet = new pet();
@@ -79,7 +79,7 @@ public class CadastroPet {
         
         String nomeArquivo = dataHoraFormatada + "-" + pet.nome.toUpperCase().replaceAll(" ", "_");
         
-        String caminhoNovoArquivo = "C:\\Users\\jvbri\\OneDrive\\Área de Trabalho\\Dev\\workspace_joaovitor\\DesafioCadastro\\respostasForm\\" + nomeArquivo + ".txt";
+        String caminhoNovoArquivo = "C:\\Users\\jvbri\\OneDrive\\Área de Trabalho\\Dev\\estudos-java\\DesafioCadastro\\respostasForm\\" + nomeArquivo + ".txt";
 		
         File arquivoOriginal = new File(caminhoArquivoRespostas);
         File novoArquivo = new File(caminhoNovoArquivo);

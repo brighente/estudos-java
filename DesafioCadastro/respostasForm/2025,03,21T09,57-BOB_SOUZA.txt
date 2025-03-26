@@ -1,0 +1,7 @@
+Nome: Bob Souza
+Tipo: Cachorro
+Sexo: Macho
+Endereço: Orleans, Ranchinho
+Idade: 19
+Peso: 32
+Raça: Poodle

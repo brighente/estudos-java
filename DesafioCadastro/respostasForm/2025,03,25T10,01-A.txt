@@ -1,0 +1,7 @@
+Nome: a
+Tipo: cachorro
+Sexo: macho
+Endereço: centro
+Idade: 19
+Peso: 43
+Raça: poodle

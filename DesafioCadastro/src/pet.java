@@ -12,7 +12,6 @@ public class pet {
 	
 
 	public pet() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public void setNome(String resposta) {

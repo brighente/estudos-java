@@ -11,10 +11,10 @@ public class Menu {
 				try {
 					opcaoEscolhida = Integer.parseInt(JOptionPane.showInputDialog
 							("1- Cadastrar PET\n"
-							+ "2- Listar PET\n"
+							+ "2- Alterar dados PET\n"
 							+ "3- Deletar PET\n"
 							+ "4- Listar PETS\n"
-							+ "5- Listar PETS por critério\n"
+							+ "5- Buscar PET\n"
 							+ "6- Sair"));
 
 				
@@ -28,6 +28,7 @@ public class Menu {
 						break;
 						
 					case 2:
+						
 						break;
 						
 					case 3:
@@ -37,6 +38,7 @@ public class Menu {
 						break;
 						
 					case 5:
+						BuscarPet.buscar();
 						break;
 						
 					case 6: JOptionPane.showMessageDialog(null, "Saindo...");

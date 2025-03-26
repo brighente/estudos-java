@@ -8,7 +8,7 @@ public class CriarFormulario {
 	public static void main(String[] args) {
 		
 		try {
-			OutputStream os = new FileOutputStream("C:\\Users\\lab003a\\Desktop\\workspace_joaovitor\\DesafioCadastro\\formulario.txt");
+			OutputStream os = new FileOutputStream("C:\\Users\\jvbri\\OneDrive\\Área de Trabalho\\Dev\\estudos-java\\DesafioCadastro\\formulario.txt");
 			OutputStreamWriter osw = new OutputStreamWriter(os);
 			BufferedWriter criarForm = new BufferedWriter(osw);
 			
